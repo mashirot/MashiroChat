@@ -1,4 +1,4 @@
-package ski.mashiro.config;
+package ski.mashiro.pojo;
 
 import lombok.Data;
 
