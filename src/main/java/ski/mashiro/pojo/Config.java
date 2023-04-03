@@ -12,7 +12,4 @@ public class Config {
     private boolean chatGptEnable = false;
     private String chatGptToken = "xxxxxx";
     private String chatGptApi = "https://api.openai.com/v1/chat/completions";
-    private boolean newBingEnable = false;
-    private String newBingToken;
-    private String newBingApi;
 }

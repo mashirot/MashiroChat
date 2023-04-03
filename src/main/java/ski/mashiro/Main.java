@@ -24,7 +24,6 @@ public class Main {
         while (true) {
             LOGGER.info("=====请选择平台=====");
             LOGGER.info("1. ChatGpt [" + (CONFIG.isChatGptEnable() ? "enable" : "disable") + "]");
-            LOGGER.info("2. newBing [" + (CONFIG.isNewBingEnable() ? "enable" : "disable") + "]");
             LOGGER.info("对话中输入 exit 结束对话");
             String cmd = SCANNER.nextLine();
             if ("1".equals(cmd)) {
@@ -33,10 +32,6 @@ public class Main {
                 } else {
                     LOGGER.info("请输入对话内容：");
                     new Chatgpt().chat();
-                }
-            } else if ("2".equals(cmd)) {
-                if (!CONFIG.isNewBingEnable()) {
-                    LOGGER.info("newBing未启用, 请在配置文件中开启");
                 }
             } else if ("exit".equals(cmd)) {
                 return;
